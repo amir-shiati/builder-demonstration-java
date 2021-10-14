@@ -1,18 +1,18 @@
 package core;
 
 public enum UserRole {
-    ADMIN("admin"),
-    VENDOR("vendor"),
-    CUSTOMER("customer");
+    ADMIN("Admin"),
+    VENDOR("Vendor"),
+    CUSTOMER("Customer");
 
-    private final String name;
+    String role;
 
-    UserRole(String name) {
-        this.name = name;
+    UserRole(String role) {
+        this.role = role;
     }
 
     @Override
     public String toString() {
-        return this.name();
+        return role;
     }
 }
